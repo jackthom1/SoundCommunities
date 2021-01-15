@@ -1,0 +1,131 @@
+.impact {
+  &--hero {
+    background: url("../Images/3_Pattern.jpg");
+    background-attachment: fixed;
+  }
+
+  &--intro {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 0.5;
+    padding-bottom: 2rem;
+    & > * {
+      margin-top: 1.5rem;
+    }
+  }
+  &--header {
+    font-size: 2rem;
+    text-align: center;
+  }
+  &--text {
+    padding: 0.5rem 0;
+  }
+
+  &--grid {
+    width: 100%;
+    height: auto;
+    background: var(--primary-color-200);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  &--report {
+    padding: 2rem 0;
+    flex-direction: column;
+    background: var(--primary-color-300);
+  }
+
+  &--pdf {
+    margin-top: 1rem;
+    width: 50vw;
+    height: 100vh;
+  }
+
+  &--casestudy {
+    padding: 2rem 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    & > * {
+      margin-top: 0.5rem;
+    }
+  }
+  &--participants,
+  &--partner {
+    margin-bottom: 3rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.case {
+  &--name {
+    font-family: var(--font-family-second);
+    font-size: 2rem;
+    &:not(:first-of-type) {
+      margin-top: 5rem;
+    }
+  }
+  &--subtitle {
+    opacity: 0.8;
+  }
+  &--text {
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+    &--nomargin {
+      margin-bottom: 0;
+    }
+  }
+  &--ref {
+    font-style: italic;
+    opacity: 0.8;
+  }
+  &--list {
+    margin-left: 2rem;
+    li {
+      padding: 0.5rem 0;
+    }
+  }
+}
+
+.part {
+  &--grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+      background: var(--primary-color-300);
+      box-shadow: 1px 1px 5px var(--primary-color-400);
+      border-radius: 0.8rem;
+    }
+  }
+  &--text {
+    align-self: center;
+    padding-bottom: 0.5rem;
+    line-height: 1.5rem;
+  }
+  &--subtitle {
+    font-style: italic;
+    opacity: 0.8;
+    padding-left: 0.5rem;
+  }
+}
+.partner--grid {
+  color: var(--primary-color-200);
+  div {
+    background: var(--primary-color-400);
+    box-shadow: 1px 1px 5px var(--primary-color-400);
+  }
+  p {
+    color: var(--primary-color-200);
+  }
+}

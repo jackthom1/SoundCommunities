@@ -1,0 +1,62 @@
+@font-face {
+  font-family: KapraNeue;
+  src: url("../atributes/KapraNeueSemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: RelativeBook;
+  src: url("../atributes/Relative-Book.ttf") format("opentype");
+}
+
+:root {
+  --primary-color-800: #262626;
+  --primary-color-400: #00a29d;
+  --primary-color-300: #b5d5a5;
+  --primary-color-200: #f0f0eb;
+
+  --second-color-800: #283f4b;
+  --second-color-500: #00942a;
+
+  --font-family-primary: RelativeBook, "serif";
+  --font-family-second: KapraNeue, "serif";
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --nav-height: 80px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --nav-height: 80px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+li {
+  font-family: var(--font-family-primary);
+  color: var(--primary-color-800);
+  // font-weight: var(--font-weight-bold);
+}
+p {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: 1.2rem;
+
+  color: var(--primary-color-800);
+}
+h1 {
+  font-size: 4rem;
+}
+
+main {
+  padding-top: var(--nav-height);
+}

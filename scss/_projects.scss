@@ -1,0 +1,62 @@
+.projects {
+  &--section2 {
+    padding: 50px 50px 0 50px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 50px 50px;
+  }
+  &--map {
+    width: 100%;
+    height: 50vh;
+  }
+}
+.project {
+  &--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+  }
+  &--title {
+    font-size: 2rem;
+    bottom: 0;
+  }
+  &--subTitle {
+    top: 0;
+    transform: scale(0);
+    transition: transform 0.2s ease-out;
+  }
+
+  &--title,
+  &--subTitle {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: var(--primary-color-200);
+    background: rgb(0, 162, 157);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 162, 157, 1) 0%,
+      rgba(181, 213, 165, 1) 100%
+    );
+  }
+  &--image {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+.project--container:hover > .project--subTitle {
+  transform: scale(1);
+}
+
+.soundMap--hero {
+  background: url("../Images/3_Pattern.jpg");
+  background-attachment: fixed;
+}

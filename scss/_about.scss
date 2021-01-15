@@ -1,0 +1,89 @@
+//* What we do page *\\
+.whatwedo {
+  &--hero {
+    background: url("../Images/4_Pattern.jpg");
+    background-attachment: fixed;
+  }
+  &--section2 {
+    padding-top: 25px;
+    width: 80%;
+    height: auto;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    & > p,
+    h2 {
+      padding-top: 20px;
+    }
+  }
+  &--list {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    a {
+      color: var(--primary-color-800);
+      text-decoration: none;
+    }
+    span {
+      font-style: italic;
+    }
+  }
+  &--listContainer {
+    margin-left: 4rem;
+    padding-top: 1.5rem;
+  }
+  &--important {
+    color: var(--primary-color-400);
+    font-size: 2rem;
+  }
+  &--header {
+    text-align: center;
+  }
+}
+//* About Us Page *\\
+.about {
+  &--hero {
+    background: url("../Images/2_Pattern.jpg");
+    background-attachment: fixed;
+  }
+
+  &--header {
+    text-align: center;
+  }
+  &--section3 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    & + p {
+      margin-top: 10px;
+    }
+  }
+  &--section3Title {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+  }
+  &--team {
+    margin-bottom: 50px;
+    display: flow-root;
+  }
+  &--image {
+    float: left;
+    max-width: 50%;
+    padding-right: 10px;
+  }
+  &--name {
+  }
+  &--role {
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+  &--info {
+    padding-top: 10px;
+  }
+  &--contact {
+    a {
+      text-decoration: none;
+      color: var(--primary-color-400);
+    }
+  }
+}

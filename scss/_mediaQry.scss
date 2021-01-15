@@ -1,0 +1,183 @@
+@media (max-width: 1024px) {
+  // NAVIGATION MEDIA QRYS \\
+  .nav {
+    &--itemContainer,
+    &--socials {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      .nav--items {
+        padding: 1.5rem 0;
+      }
+    }
+
+    &--list {
+      flex-direction: column;
+    }
+    &--openBtn {
+      display: block;
+      padding-top: 10px;
+    }
+  }
+
+  .home {
+    &--Text {
+      font-size: 2.4rem;
+    }
+    &--section5 {
+      grid-template-columns: 1fr 1fr;
+    }
+    &--contact {
+      grid-column: 1/2;
+    }
+  }
+
+  .projects {
+    &--section2 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    &--Text {
+      font-size: 1.8rem;
+    }
+
+    &--section2 {
+      padding: 60px 10%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    &--section3 {
+      height: 40vh;
+    }
+    &--animation {
+      &--title {
+        font-size: 2rem;
+      }
+    }
+
+    &--section5 {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+    &--contact {
+      grid-column: 1/2;
+      &Links {
+        margin-top: 25px;
+      }
+    }
+  }
+  .whatwedo {
+    &--important,
+    &--header {
+      text-align: center;
+    }
+    &--listContainer {
+      margin-left: 0.8rem;
+    }
+  }
+  .animation {
+    justify-content: center;
+    align-items: center;
+  }
+  .contact {
+    &--submit {
+      align-self: center;
+    }
+  }
+
+  .projects {
+    &--section2 {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .impact {
+    &--intro {
+      padding: 0.5rem 2rem;
+    }
+    &--grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    &--participants,
+    &--partner {
+      width: 90%;
+    }
+  }
+
+  // FOOTER MEDIA QRSY \\
+  .footer {
+    &--grid {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    &--nav {
+      display: none;
+      height: 50px;
+    }
+    &--items {
+      padding: 0 20px;
+    }
+    &--socials,
+    &--contacts {
+      display: flex;
+    }
+    &--socials {
+      flex-direction: row;
+      padding-bottom: 25px;
+    }
+    &--cc {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .home {
+    &--MainContent {
+      grid-template-columns: 1fr;
+    }
+    &--right {
+      display: none;
+    }
+    &--section3 {
+      height: 60vh;
+    }
+  }
+
+  .projects {
+    &--section2 {
+      grid-template-columns: 1fr;
+    }
+  }
+  .impact {
+    &--participants,
+    &--partner,
+    &--casestudy {
+      width: 90%;
+    }
+    &--pdf{
+      width: 80vw;
+    }
+  }
+  .part {
+    &--grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (min-width: 1800px){
+  .impact{
+    &--participants,
+    &--partner,
+    &--casestudy {
+      width: 60%;
+    }
+
+}

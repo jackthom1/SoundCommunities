@@ -1,0 +1,257 @@
+// Main home page \\
+.home {
+  &--MainContent {
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  &--right {
+    background: url("../Images/homeImg3.jpg");
+    background-position: top;
+    background-size: cover;
+  }
+  &--left {
+    background: var(--primary-color-400);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    p:nth-child(2) {
+      margin-top: 15px;
+    }
+  }
+  &--Text {
+    width: 25ch;
+    font-size: 2.8rem;
+    font-family: var(--font-family-second);
+  }
+  // 3 block grid Section 2
+  &--section2 {
+    width: 100%;
+    // height: 40vh;
+    background: var(--primary-color-300);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 25px 60px;
+    color: var(--primary-color-200);
+    padding: 60px;
+  }
+  &--grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.4s ease-in-out;
+    &--image {
+      width: 100%;
+      object-fit: contain;
+      object-position: 50% 50%;
+    }
+    &--title {
+      margin-top: 1rem;
+      text-align: center;
+    }
+    &:hover {
+      transition: transform 0.4s ease-in-out;
+      transform: scale(1.1);
+    }
+  }
+  // section 3 Our impact
+  &--section3 {
+    width: 100%;
+    height: 40vh;
+    background: var(--primary-color-200);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &--animation {
+    &--header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+    &--title {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 3rem;
+    }
+    &--button {
+      padding: 10px;
+      background: var(--primary-color-300);
+      border: none;
+      width: 150px;
+      color: var(--primary-color-800);
+      transition: background 0.2s ease-out;
+
+      &:hover,
+      &:focus {
+        background: var(--primary-color-400);
+        color: var(--primary-color-800);
+      }
+    }
+  }
+
+  // section 4 Social Media
+  &--section4 {
+    width: 100%;
+    height: auto;
+    padding: 1rem 20%;
+    background: var(--primary-color-300);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  //section 5 contact us
+  &--section5 {
+    width: 100%;
+    height: auto;
+    background: var(--primary-color-300);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  &--contact {
+    padding: 10px;
+    grid-column: 2/3;
+  }
+  &--contactLinks {
+    text-align: center;
+  }
+}
+
+.contact {
+  &--title {
+    margin-bottom: 10px;
+  }
+  &--form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &--box {
+    padding: 10px;
+    background: var(--primary-color-200);
+    border: none;
+    color: var(--primary-color-800);
+    & + * {
+      margin-top: 10px;
+    }
+    &::placeholder {
+      color: var(--primary-color-800);
+    }
+    &:focus {
+      border: 1px var(--primary-color-300) solid;
+    }
+    &[name="message"] {
+      height: 10rem;
+    }
+  }
+  &--submit {
+    width: 50%;
+    align-self: flex-end;
+    transition: background 0.2s ease-out;
+
+    &:hover,
+    &:focus {
+      background: var(--primary-color-400);
+      color: var(--primary-color-800);
+    }
+  }
+  &--email {
+    margin-bottom: 10px;
+  }
+  &--link {
+    color: var(--second-color-800);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: var(--primary-color-800);
+    }
+    i {
+      font-size: 2rem;
+      padding: 10px;
+    }
+  }
+}
+
+.animation {
+  display: none;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 1rem;
+  overflow: hidden;
+  &--text {
+    color: var(--primary-color-800);
+    font-size: 1.8rem;
+    display: block;
+    padding-bottom: 2rem;
+    transform-origin: center bottom;
+    overflow: hidden;
+    text-align: center;
+    span {
+      color: var(--primary-color-400);
+    }
+  }
+  &--title {
+    display: block;
+    background-color: var(--primary-color-200);
+    margin-bottom: 1rem;
+  }
+  &--button {
+    background: linear-gradient(
+      90deg,
+      var(--primary-color-300) 0%,
+      var(--primary-color-400) 100%
+    );
+    width: 6ch;
+    text-align: center;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 4rem;
+    color: var(--primary-color-200);
+    position: absolute;
+    right: 0;
+    top: 90%;
+    cursor: pointer;
+  }
+  &--cta {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--primary-color-400);
+    transition: color 0.2s ease-out;
+    &:hover,
+    &:focus {
+      color: var(--primary-color-300);
+    }
+  }
+}
+
+.a,
+.b,
+.c {
+  background-color: var(--primary-color-200);
+}
+.j,
+.k {
+  text-align: center;
+}
+#animation2,
+#animation3,
+#animation4 {
+  display: none;
+}
+#loading {
+  display: none;
+}
